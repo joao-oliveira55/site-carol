@@ -1,0 +1,166 @@
+/*-------- service ---------*/
+/*logo TOP*/
+
+.div-logo-top{
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+}
+.logo-top-page{
+    font-size: 11px;
+    font-family: dalmatins;
+    color: #151E3F;
+}
+.logo-bottom-page{
+    font-size: 5px !important;
+    color: #D20039;
+    font-family: nexa-light;
+    opacity: 1;
+    letter-spacing: 7.5px;
+    text-align: center;
+}
+
+h1{
+    font-family: nexa-bold;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.page-service{
+    background: url('src/img/bg2.png');
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 20vh;
+    position: relative;
+    
+}
+.service-cards{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative; 
+    overflow: hidden;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    width: 100vw ;
+    transition: all 1s ease-out;
+    align-items: center;
+    justify-content: center;
+}
+.div-services{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.card{
+    width: 70%;
+    height: 133px;
+    border-radius: 35px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease-out;
+    margin-top: 25px;
+    background-repeat: no-repeat;
+}
+.card:nth-child(1){
+    background-image: url('src/img/card-sobrancelha-corte.jpg');
+}
+.card:nth-child(2){
+    background-image: url('src/img/card-massagem.jpg');
+}.card:nth-child(3){
+    background-image: url('src/img/carde-pele.jpg');
+   
+}.card:nth-child(4){
+    background-image: url('src/img/card-gordura.jpg');
+}
+.card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent linear-gradient(115deg, #FFFFFF 7%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+}
+.card-title{
+    text-align: left;
+    font-size: 20px;
+    font-family: nexa-bold;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    
+}
+.image-card{
+    position: absolute;
+    right: 0;
+    height: 350px;
+    pointer-events: none;
+    bottom: -110px;
+    transition: all 1s ease;
+}
+.desc-card{
+    max-width: 90%;
+    font-size: 15px;
+    font-family: nexa-light ;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    transition: all 0.5s ease-out;
+}
+.desc-card-bottom{
+    top:50%;
+    text-align: left;
+    left: 20px;
+}
+.card-list-service{
+    position: absolute;
+    z-index: 1;
+    bottom: 40px;
+    left: 20px;
+}
+.card-list-service li{
+    font-size: 15px;
+    color: #151E3F;
+    font-family: nexa-bold;
+    margin: 7px 0;
+}
+
+.open-card{
+    height: 310px;
+    
+}
+.open-card-title{
+    left: auto;
+    top: 30px;
+    transition:left 1s linear;
+}
+.open-card-image{
+    height: auto;
+    bottom: auto;
+}
+.arrow_right{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    transition: all 0.5s ease-out;
+}
+.slick-service{
+    transform: translateX(-100vw);
+}
+.transform{
+    transform: rotate3d(10, 1000, 10, 180deg);
+}
+/*-------- service ---------*/
+
+

@@ -16,6 +16,18 @@ btnDrop.addEventListener('click', function(){
 })
 
 
+// menu color
+
+const link_cat = document.querySelectorAll('.categoria')
+const link_dep = document.querySelectorAll('.departament')
+
+for(let link_categoria of link_cat){
+    link_categoria.addEventListener('click', function(){
+        let link = link_categoria.querySelectorAll('a')
+
+        link.style.color = 'black'
+    })
+}
 
 //  Service
 
@@ -36,3 +48,15 @@ for(let cards of card){
         cards.classList.toggle('open-card')
     })
 }
+
+
+const btn_service = document.querySelector('.arrow_right')
+
+
+btn_service.addEventListener('click', function(){
+    const service = document.querySelectorAll('.services')
+    service[0].classList.toggle('slick-service')
+    service[1].classList.toggle('slick-service')
+
+    btn_service.classList.toggle('transform')
+})

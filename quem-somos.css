@@ -1,0 +1,94 @@
+/*logo TOP*/
+
+.div-logo-top{
+    position: absolute;
+    right: 10px;
+}
+.logo-top-page{
+    font-size: 11px;
+    font-family: dalmatins;
+    color: #151E3F;
+}
+.logo-bottom-page{
+    font-size: 5px !important;
+    color: #D20039;
+    font-family: nexa-light;
+    opacity: 1;
+    letter-spacing: 7.5px;
+    text-align: center;
+}
+
+/*-------- quem somos ---------*/
+.page-fundo{
+    background: url('src/img/bg2.png');
+    padding-bottom: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.content-top{
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vh;
+    align-items: center;
+}
+.title-quem-somos{
+    font-size: 30px ;
+    font-family: nexa-bold;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.desc-quem-somos{
+    font-family: nexa-light ;
+    font-size: 16px;
+    color: #030027;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 25px !important;
+}
+.content-center{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2DB9AC;
+    padding: 30px 0;
+    border-radius: 0 30px 0 0;
+}
+.info-quem-somos{
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.info-quem-somos p{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: nexa-light;
+    text-align: center;
+}
+.btnservice{
+    height: 41px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: OpenSans-bold;
+    background: #090070;
+    font-size: 18px;
+    margin-bottom: 10vh;
+}
+.content-text{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+}
+.text{
+    font-size: 16px;
+    font-family: nexa-light ;
+    text-align: center;
+    line-height: 25px;
+}
+/*-------- quem somos ---------*/
