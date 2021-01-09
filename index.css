@@ -58,17 +58,30 @@
     position: absolute ;
     top: 12px;
 }
+.content-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 .content-text{
     max-width: 80%;
-    margin: 0 auto;
-    padding: 100px 0;
     text-align: center;
+    padding: 10px;
+}
+.content-text h2{
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-family:  OpenSans;
+    color: #151E3F;
 }
 .text{
     font-size: 16px;
     font-family: nexa-light ;
     text-align: center;
     line-height: 32px;
+    margin-bottom: 25px;
 }
 .info-card{
     width: 100%;
@@ -92,6 +105,7 @@
     margin-right: auto;
     left: 0;
     right: 0;
+    justify-content: center;
 }
 .sevice.top{
     border-radius: 20px 20px 0 0;
@@ -99,6 +113,7 @@
 }
 .sevice.bottom{
     border-radius: 0 0 20px 20px;
+    
 }
 .card-sevice-image1{
     background: url('src/img/sobrancelha-corte.jpg');
@@ -115,7 +130,6 @@
     color: #030027;
     font-size: 17px;
     font-family: dalmatins;
-    padding-top: 25%;
     margin-bottom: 25px;
 }
 .btn-info{
@@ -140,8 +154,55 @@
     font-size: 18px;
     margin-bottom: 10vh;
 }
+.content-body-botom{
+    height: auto !important;
+}
 .content-text-bottom{
     padding-top: 10vh !important;
+}
+.div-logo-top{
+    display: none;
+}
+@media (min-width: 720px ){
+    .info-card{
+        display: flex;
+    }
+    .card-sevice{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sevice.bottom{
+        margin-left:  0 ;
+        margin-right: auto ;
+        border-radius: 0px 20px 20px 0px ;
+    }
+    .sevice.top{
+        margin-left:  auto ;
+        margin-right: 0 ;
+        border-radius: 20px 0px 0px 20px ;
+        bottom: inherit;
+    }
+    .banner-principal-foto{
+        background-position: 95%;
+        height: 90vh;
+        background-attachment: unset;
+    }
+    .banner-principal{
+        height: 90vh;
+    }
+    .btn-banner{
+        width: 40vw;
+        left: 5vw;
+        top: 85vh;
+        margin: unset;
+    }
+    .div-logo-banner{
+        left: 5vw;
+        top: 40vh;
+        right: unset;
+    }
+
 }
 @media (max-width: 380px ){
     .banner-principal-foto{

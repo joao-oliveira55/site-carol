@@ -145,6 +145,94 @@ ul{
 .visited:target{
     color: red
 }
+@media (min-width: 720px ){
+
+    .form-newsletter{
+        max-width: 50% ;
+    }
+    .div-logo-top{
+        position: absolute;
+        left: 50px;
+        top: 0;
+        display: unset !important;
+    }
+    .logo-top-page{
+        font-size: 11px !important;
+
+    }
+    .logo-bottom-page{
+        font-size: 7px !important;
+        color: #D20039 !important;
+        letter-spacing: 9px;
+    }
+    .departament::after{
+        height: 0;
+        width: 0;
+    }
+    .menu-mobile{
+        width: 100%;
+        display: flex;
+        padding: 0 0;
+        border-radius: 0;
+        align-items: center;
+        background: unset;
+        backdrop-filter: unset;
+        height: 10vh;
+        position: unset;
+        background: #2DB9AC;
+        justify-content: flex-end;
+    }
+    .icon-home{
+        position: absolute;
+        left: -30px;
+        top: -2px;
+        padding-left: 30px;
+    }
+    .drop{
+        right: -25px;
+    }
+    .link-departament{
+        margin: 0;
+    }
+    .section-categoria{
+        position: absolute;
+        top: 41px;  
+        right: -50%;
+        background-color: #4db8ab;
+        transition: 300ms;
+        padding: 0 15px;
+        border-radius: 0 0 20px 20px;
+    }
+    .categoria{
+        transition: all 50ms ease;
+        visibility: visible;
+    }
+    .section-categoria.deactivated li{
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .section-categoria.section-categoria-drop{
+        height: 255px !important;
+    }
+    .hamburguer{
+        display: none;
+    }
+    .deactivated{
+        transform: translateX(0);
+    }
+    .section-categoria.deactivated{
+        transform: translateY(0);
+    }
+    .menu-mobile .departament{
+        margin: 0 25 !important;
+    }
+    .menu-mobile .departament:nth-child(4){
+        margin: 0px 15vh 0px 50px !important;
+    }
+    .menu-mobile .departament:nth-child(1){
+        padding-left: 30px;
+    }
+}
 /*---------header ---------*/
 /*-------- Footer ---------*/
 

@@ -33,6 +33,9 @@
     padding-top: 20vh;
     align-items: center;
 }
+.content-top img{
+    margin-bottom: 30px;
+}
 .title-quem-somos{
     font-size: 30px ;
     font-family: nexa-bold;
@@ -64,7 +67,7 @@
 }
 .info-quem-somos p{
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 16px;
     font-family: nexa-light;
     text-align: center;
 }
