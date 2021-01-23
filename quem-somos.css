@@ -21,7 +21,6 @@
 /*-------- quem somos ---------*/
 .page-fundo{
     background: url('src/img/bg2.png');
-    padding-bottom: 50px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -80,12 +79,12 @@
     font-family: OpenSans-bold;
     background: #090070;
     font-size: 18px;
-    margin-bottom: 10vh;
+    margin-bottom: 25px;
 }
 .content-text{
     max-width: 80%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 20px 0;
     text-align: center;
 }
 .text{
@@ -93,5 +92,72 @@
     font-family: nexa-light ;
     text-align: center;
     line-height: 25px;
+}
+
+.clinica{
+    width: 100%;
+    background-color: var(--fundo-verde);
+    border-radius: 30px 30px 0 0;
+    padding-bottom: 30px;
+}
+.clinica .content-clinica{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.clinica .content-clinica h2{
+    padding-top: 50px;
+    font-size: 20px;
+    font-family: dalmatins;
+    text-align: center;
+}
+.div-fachada{
+    width: 100%;
+    height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-fachada img{
+    width: 283px;
+    height: 265px;
+    
+}
+.location{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0 15px 0;
+}
+.location h2{
+    font-size: 20px;
+    font-family: dalmatins;
+    text-align: center;
+}
+.location iframe{
+    margin-top: 25px;
+    max-width: 90vw;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 20px rgba(0,0,0,.4);
+}
+.location p{
+    font-family: nexa-light;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 80%;
+}
+.galeria-clinica{
+    display: grid;
+    grid-template-columns: 90vw 90vw 90vw 90vw;
+    overflow: scroll;
+    margin-top: 30px;
+}
+.galeria-clinica img{
+    width: 90vw;
+    height: 200px;
 }
 /*-------- quem somos ---------*/

@@ -90,14 +90,15 @@ h1{
     background: transparent linear-gradient(115deg, #FFFFFF 7%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
 }
 .card-title{
+    width: 80%;
     text-align: left;
     font-size: 20px;
     font-family: nexa-bold;
     position: absolute;
     z-index: 1;
-    top: 10px;
-    left: 10px;
-    
+    top: 17px;
+    left: 16px;
+    transition: all 400ms ease-out;
 }
 .image-card{
     position: absolute;
@@ -123,10 +124,8 @@ h1{
     left: 20px;
 }
 .card-list-service{
-    position: absolute;
-    z-index: 1;
-    bottom: 40px;
-    left: 20px;
+    text-align: left;
+    margin: 30px 10px 0;
 }
 .card-list-service li{
     font-size: 15px;
@@ -140,9 +139,8 @@ h1{
     
 }
 .open-card-title{
-    left: auto;
     top: 30px;
-    transition:left 1s linear;
+    text-align: center;
 }
 .open-card-image{
     height: auto;

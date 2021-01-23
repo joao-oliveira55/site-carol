@@ -26,6 +26,13 @@
     font-family: OpenSans-italic;
     src: url('fonts/OpenSans/OpenSans-Italic.ttf');
 }
+:root{
+    --fundo-verde: #2DB9AC;
+    --vermelho-logo:#D20039;
+    --azul-logo: #151E3F;
+
+
+}
 /*---------header ---------*/
 a{
     text-decoration: none;
@@ -162,7 +169,7 @@ ul{
     }
     .logo-bottom-page{
         font-size: 7px !important;
-        color: #D20039 !important;
+        color: var(--vermelho-logo) !important;
         letter-spacing: 9px;
     }
     .departament::after{
@@ -179,7 +186,7 @@ ul{
         backdrop-filter: unset;
         height: 10vh;
         position: unset;
-        background: #2DB9AC;
+        background: var(--fundo-verde);
         justify-content: flex-end;
     }
     .icon-home{
@@ -198,7 +205,7 @@ ul{
         position: absolute;
         top: 41px;  
         right: -50%;
-        background-color: #4db8ab;
+        background-color: var(--fundo-verde);
         transition: 300ms;
         padding: 0 15px;
         border-radius: 0 0 20px 20px;
@@ -241,10 +248,10 @@ ul{
     padding: 0;
 }
 footer{
-    background: #2DB9AC;
+    background: var(--fundo-verde);
 }
 .div-logo{
-    max-width: 50%;
+    max-width: 80%;
     margin: 0 auto;
     text-align: center;
     padding: 20px 10px
@@ -253,13 +260,13 @@ footer{
     font-family: dalmatins;
     color: #151E3F;
     opacity: 1;
-    font-size: 15px;
+    font-size: 20px;
 }
 .logo-bottom{
     font-family: nexa-light;
     color: #FFFFFF;
     opacity: 1;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 12px;
 }
 .social{
@@ -300,6 +307,14 @@ footer{
 .div-address{
     display: flex;
 }
+.horario{
+    font-size: 13px;
+    font-family: nexa-light;
+    color: black;
+    text-align: center;
+    margin: 15px auto 0;
+    max-width: 90%;
+}
 .address{
     font-family: nexa-light;
     font-size: 13px;
@@ -314,29 +329,7 @@ footer{
    margin-right: 5px;
 }
 
-@media (max-width: 720px ){
-    .logo-top{
-        font-size: 20px;
-    }
-    .logo-bottom{
-       font-size: 11px;
-    }
-}
-@media (max-width: 480px ){
-    .logo-top{
-        font-size: 17px;
-    }
-    .logo-bottom{
-       font-size: 10px;
-    }
-}
 @media (max-width: 359px ){
-    .logo-top{
-        font-size: 15px;
-    }
-    .logo-bottom{
-       font-size: 10px;
-    }
     .email-phone{
         gap: 10px;
         flex-direction: column;
@@ -376,7 +369,7 @@ footer{
     
 }
 .newsletter-info samp{
-    color: #D20039;
+    color: var(--vermelho-logo);
     font-family:  OpenSans-semibold ;
 }
 .newsletter-icon{
@@ -406,7 +399,7 @@ footer{
 }
 
 .btn-email{
-    background: #D20039;
+    background: var(--vermelho-logo);
     border: none;
     height: 40px;
     border-radius: 5px;

@@ -6,6 +6,10 @@
     <title>Carol Lemes Estetica - Especialista em Micropgimentação</title>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="index.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 </head>
 <header>
     <div class="hamburguer">
@@ -27,15 +31,14 @@
             <a href="service.html" class="link-departament">Serviços</a>
             <img class="drop drop-rotate" src="src/icon/arrow.svg" alt="icone-de-seta">
             <div class="section-categoria deactivated">
-                <li class="categoria"><a href="">Sobrancelha</a></li>
-                <li class="categoria"><a href="">Massagem</a></li>
-                <li class="categoria"><a href="">Gordura localizada</a></li>
-                <li class="categoria"><a href="">Unhas</a></li>
-                <li class="categoria"><a href="">Tratamento para pele</a></li>
-                <li class="categoria"><a href="">Maquiagem</a></li>
-                <li class="categoria"><a href="">Depilação</a></li>
+                <li class="categoria"><a href="service.html?sobrancelha">Sobrancelha</a></li>
+                <li class="categoria"><a href="service.html?massagem">Massagem</a></li>
+                <li class="categoria"><a href="service.html?gordura">Gordura localizada</a></li>
+                <li class="categoria"><a href="service.html?unhas">Unhas</a></li>
+                <li class="categoria"><a href="service.html?pele">Tratamento para pele</a></li>
+                <li class="categoria"><a href="service.html?maquiagem">Maquiagem</a></li>
+                <li class="categoria"><a href="service.html?depilacao">Depilação</a></li>
             </div>
-            
         </ul>
         <ul class="departament">
             <a href="#" class="link-departament">Blog</a>
@@ -51,7 +54,7 @@
 <body>
     <section class="banner-principal">
         <div class="banner-principal-foto"></div>
-        <button class="btn-banner">Conheça o trabalho <img src="src/icon/arrow_down.svg" alt="seta-apontada-para-baixo"></button>
+        <button id="btn-banner" class="btn-banner">Conheça o trabalho <img src="src/icon/arrow_down.svg" alt="seta-apontada-para-baixo"></button>
     </section>
 
     <section class="content-body">
@@ -61,7 +64,6 @@
         </div>
         
         <div class="content-text ">
-            <h2> Conheça mais sobre a Carol! </h2>
             <p class="text">Olá, seja muito bem vindo(a) ao meu Site! Meu nome é Caroline Lemes, tenho 23 anos e sou formada em Estética pela Universidade de Sorocaba - Uniso. Sou especialista em Sobrancelha, mas também realizo varios procedimentos estéticos e o meu objetivo é aumentar a Autoestima de meus(a) clientes através da estética.</p>
         </div>  
         <a href="/quem-somos.html"><button class="btn-info">Veja mais!</button></a>
@@ -81,45 +83,114 @@
         </div>
     </section>
     <section class="content-body content-body-botom">
-        <div class="content-text content-text-bottom">
-            <a href="/service.html"><button class="btnservice">CONHEÇA OS SERVIÇOS</button></a>
-            <p class="text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+        <div class="servicos">
+            <h2>Serviços</h2>
+            <div class="div-card-grid">
+                <div class="card-grid">
+                    <a href="#">
+                        <img src="src/img/card-home-maquiagem.png" alt="">
+                        <h3>Maquiagem</h3>
+                    </a>
+                    <a href="#">
+                        <img src="src/img/card-home-depilaçao.png" alt="">
+                        <h3>Depilação</h3>
+                    </a>
+                </div>
+                <div class="card-grid">
+                    <a href="#">
+                        <img src="src/img/card-home-gordura.png" alt="">
+                        <h3>Gordura <br>localizada</h3>
+                    </a>
+                    <a href="#">
+                        <img src="src/img/card-home-unhas.png" alt="">
+                        <h3>Unhas</h3>
+                    </a>
+                </div>
+                <div class="card-grid">
+                    <a href="#">
+                        <img src="src/img/card-home-maquiagem.png" alt="">
+                        <h3>Sobrancelha</h3>
+                    </a>
+                    <a href="#">
+                        <img src="src/img/card-home-maquiagem.png" alt="">
+                        <h3>Sobrancelha</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="incone-bolhas">
+                <span class="back"></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img src="src/icon/keyboard_arrow_left-24px.svg" alt="" class="icon-left visi">
+            <img src="src/icon/keyboard_arrow_right-24px.svg" alt="" class="icon-rigth">
+        </div>
+       <!-- <a href="/service.html"><button class="btnservice">CONHEÇA OS SERVIÇOS</button></a>-->
+        
+    </section>
+    <section class="clinica">
+
+        <div class="content-clinica">
+            <div class="div-clinica">
+                <h2>A Clinica</h2>
+
+                <div class="div-fachada">
+                    <img src="src/img/fachada.png" alt="clinica carol lemes">
+                </div>
+                <p class="text">
+                    Conheça um pouco mais nossa clinica, ela fica localizada em Votorantim, é um espaço muito acolhedor aonde peparei com muito amor, contamos com ar condicionado, espaço do café, massageador, e muito mais.
+                </p>
+
+                <a href="/quem-somos.html"><button class="btn-info">Veja mais!</button></a>
+            </div>
         </div>
     </section>
-</body>
-<section class="newsletter">
-    <div class="content">
-        <h2 class="newsletter-info">Assine a nossa <samp>NEWSLETTER</samp> para receber nossas notícias e promoções!</h2>
-        <img class="newsletter-icon"src="src/icon/Icon-ionic-ios-mail.svg" alt="icone-de-email">
-    </div>
-    <form class="form-newsletter"action="post">
-        <input class="input-email" type="text" placeholder="insira seu e-mail">
-        <button class="btn-email">ASSINAR E RECEBER NOVIDADES</button>
-    </form>
-</section>
+    <section class="location">
+        <h2>Onde Estamos</h2>
 
-<footer>
-    <div class="div-logo">
-        <h3 class="logo-top">Carol Lemes</h3>
-        <h3 class="logo-bottom">ESTÉTICA</h3>
-    </div>
-    <div class="social">
-        <img src="src/icon/fb_logo.svg" alt="icone-facebook">
-        <img src="src/icon/instagram logo.svg" alt="icone-instagram">
-        <img src="src/icon/linkedin logo.svg" alt="icone-linkedin">
-    </div>
-    <div class="contact">
-        <div class="email-phone"> 
-            <p class="email"> <img src="src/icon/email.svg" alt="icone-do-email"> carollemes@gmail.com</p>
-            <p class="whatsapp"><img src="src/icon/whatsapp.svg" alt="icone-do-whatsapp">(15) 996098623</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4175252548466!2d-47.46663704992151!3d-23.553443467108828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a1749c813bd%3A0xf911da46ae3b9d88!2sR.%20Eug%C3%AAnio%20Biazin%2C%20118%20-%20Jardim%20Clarice%20I%2C%20Votorantim%20-%20SP%2C%2018116-700!5e0!3m2!1spt-BR!2sbr!4v1610578425435!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        <p>R. Eugênio Biazin, 118 - Jardim Clarice I Votorantim - SP</p>
+
+        <p>Horário de funcionamento: de seg. à sexta, das 08h às 20h, sábado, das 08h às 20h.</p>
+    </section>
+
+
+    <section class="newsletter">
+        <div class="content">
+            <h2 class="newsletter-info">Assine a nossa <samp>NEWSLETTER</samp> para receber nossas notícias e promoções!</h2>
+            <img class="newsletter-icon"src="src/icon/Icon-ionic-ios-mail.svg" alt="icone-de-email">
         </div>
-        <div class="div-address">
-            
-            <p class="address"><img src="src/icon/location.svg" alt="icone-de-localização">R. Eugênio Biazin, 118 - Jardim Clarice I Votorantim - SP, 18116-700 </p>
+        <form class="form-newsletter"action="post">
+            <input class="input-email" type="text" placeholder="insira seu e-mail">
+            <button class="btn-email">ASSINAR E RECEBER NOVIDADES</button>
+        </form>
+    </section>
+    <footer>
+        <div class="div-logo">
+            <h3 class="logo-top">Carol Lemes</h3>
+            <h3 class="logo-bottom">ESTÉTICA</h3>
         </div>
-    </div>
-</footer>
-<script src="index.js"></script>
+        <div class="social">
+            <img src="src/icon/fb_logo.svg" alt="icone-facebook">
+            <img src="src/icon/instagram logo.svg" alt="icone-instagram">
+            <img src="src/icon/linkedin logo.svg" alt="icone-linkedin">
+        </div>
+        <div class="contact">
+            <div class="email-phone"> 
+                <p class="email"> <img src="src/icon/email.svg" alt="icone-do-email"> carollemes@gmail.com</p>
+                <p class="whatsapp"><img src="src/icon/whatsapp.svg" alt="icone-do-whatsapp">(15) 996098623</p>
+            </div>
+            <div class="div-address">
+                
+                <p class="address"><img src="src/icon/location.svg" alt="icone-de-localização">R. Eugênio Biazin, 118 - Jardim Clarice I Votorantim - SP, 18116-700 </p>
+            </div>
+            <div class="horario">
+                <p>Horário de funcionamento: de seg. à sexta, das 08h às 20h, sábado, das 08h às 20h.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
 </html>
