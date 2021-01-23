@@ -67,7 +67,7 @@ $(window).scroll(function (event) {
         logo.style.transform = "inherit"
     }else{
         text.style.padding = "150px 0 0 0"
-        logo.style.transform = "translateY(280px)"
+        logo.style.transform = "translateY(200px)"
         document.querySelector(".text").style.opacity="1"
     }
 });
