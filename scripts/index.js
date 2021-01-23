@@ -65,9 +65,10 @@ $(window).scroll(function (event) {
     if(scroll <= 250){
         text.style.padding = "10px 0 0 0"
         logo.style.transform = "inherit"
+        document.querySelector(".text").style.opacity="0"
     }else{
         text.style.padding = "150px 0 0 0"
-        logo.style.transform = "translateY(200px)"
+        logo.style.transform = "translateY(230px)"
         document.querySelector(".text").style.opacity="1"
     }
 });

@@ -73,6 +73,7 @@
     text-align: center;
     padding: 10px;
     transition: 400ms;
+    margin-top: 30px;
 }
 .content-text .text{
     opacity: 0;
@@ -83,7 +84,7 @@
     text-align: center;
     line-height: 32px;
     margin-bottom: 25px;
-    transition: all 1.5s ease-out;
+    transition: all 1s ease-out;
 }
 .info-card{
     width: 100%;
