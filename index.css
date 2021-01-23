@@ -6,11 +6,10 @@
     height: 90vh;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-bottom: 10vh;
 }
 .banner-principal-foto{
     background: url('src/img/foto_1.png');
-    height: 100vh;
+    height: 90vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left;
@@ -67,6 +66,7 @@
     margin-bottom: 50px;
     position: relative;
     transition: 400ms;
+    margin-top: 10vh;
 }
 .content-text{
     max-width: 80%;
