@@ -3,9 +3,10 @@
 
 .banner-principal{
     background: url('src/img/bg1.png');
-    height: 100vh;
+    height: 90vh;
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-bottom: 10vh;
 }
 .banner-principal-foto{
     background: url('src/img/foto_1.png');
@@ -21,7 +22,7 @@
     max-width: 70%;
     position: absolute;
     background: transparent;
-    top: -230px;
+    top: -280px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -41,7 +42,7 @@
     width: 80vw;
     position: absolute;
     background:#D20039  ;
-    bottom: 30px;
+    bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
